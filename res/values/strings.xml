@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="hello">Hello World, RF12StatsActivity!</string>
-    <string name="app_name">RF12 Stats</string>
-    <string name="question_0_label">Where were you?</string>
-    <string name="question_1_label">How much fun did you have?</string>
-    <string name="question_2_label">How many units of alcohol did you drink?</string>
+    <string name="app_name">Roskilde Festival Yesterday</string>
+    <string name="area_label">Where were you?</string>
+    <string name="fun_label">How much fun did you have?</string>
+    <string name="alcohol_label">How many units of alcohol did you drink?</string>
     <string name="welcome">How was yesterday?</string>
 
     <string-array name="areas">
