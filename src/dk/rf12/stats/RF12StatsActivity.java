@@ -1,13 +1,11 @@
 package dk.rf12.stats;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.RatingBar;
 import android.widget.SeekBar;
-import android.widget.Toast;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -50,6 +48,11 @@ public class RF12StatsActivity extends Activity {
     }
     
     public void submit(View v) {
+    	
+    	Intent myIntent = new Intent(this, RF12StatsMapActivity.class);
+    	this.startActivity(myIntent);
+    	
+    	/*
         Spinner question0 = (Spinner) findViewById(R.id.question_0_value);
         RatingBar question1 = (RatingBar) findViewById(R.id.question_1_value);
         SeekBar question2 = (SeekBar) findViewById(R.id.question_2_value);
@@ -60,5 +63,6 @@ public class RF12StatsActivity extends Activity {
 	        String area = (String) question0.getSelectedItem();
 	        Log.d(LOG_TAG, "Submitting area = "+area+", fun = "+question1.getProgress()+", alc = "+question2.getProgress());
         }
+        */
     }
 }

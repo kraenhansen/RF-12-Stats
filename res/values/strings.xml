@@ -27,4 +27,7 @@
 
     <string name="pease_select_something">Please fill out the questionnaire before submitting.</string>
 
+    <string name="i_got_friends">I got friends</string>
+    <string name="i_got_friends_message">Pass the phone to a friend</string>
+
 </resources>

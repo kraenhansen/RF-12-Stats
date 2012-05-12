@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
 import android.widget.RatingBar;
 import android.widget.SeekBar;
 import android.widget.Toast;
@@ -22,11 +23,12 @@ public class RF12StatsMapActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
     	super.onCreate(savedInstanceState);
+    	this.setContentView(R.layout.map);
     	
-    	ViewGroup.LayoutParams layoutParams = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT, ViewGroup.LayoutParams.FILL_PARENT);
+    	LinearLayout mapView = (LinearLayout) findViewById(R.id.map_view);
     	
     	Map map = new Map(this);
-    	
-    	setContentView(map, layoutParams);
+    	mapView.addView(map);
     }
+    
 }
