@@ -4,79 +4,92 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content" >
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        android:padding="10dp" >
-
-        <TextView
-            android:id="@+id/welcome_label"
-            style="@style/textAppearanceXLarge"
+        android:layout_height="wrap_content" >
+        
+        <!-- <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/welcome"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
+            android:src="@drawable/logo" />-->
 
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="2dp"
-            android:layout_margin="10dp"
-            android:background="#80FFFFFF" />
-
-        <TextView
-            android:id="@+id/area_label"
-            style="@style/questionLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/area_label" />
-
-        <Spinner
-            android:id="@+id/area"
+        <LinearLayout
+            android:layout_alignParentTop="true"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:prompt="@string/area_label" />
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp" >
 
-        <TextView
-            android:id="@+id/fun_label"
-            style="@style/questionLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/fun_label" />
+            <TextView
+                android:id="@+id/welcome_label"
+                style="@style/textAppearanceXLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
 
-        <RatingBar
-            android:id="@+id/fun"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_margin="10dp"
+                android:background="#80FFFFFF" />
 
-        <TextView
-            android:id="@+id/alcohol_label"
-            style="@style/questionLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/alcohol_label" />
+            <TextView
+                android:id="@+id/area_label"
+                style="@style/questionLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/area_label" />
 
-        <TextView
-            android:id="@+id/alcohol_hint"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            <Spinner
+                android:id="@+id/area"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/area_label" />
 
-        <SeekBar
-            android:id="@+id/alcohol"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:max="30" />
+            <TextView
+                android:id="@+id/fun_label"
+                style="@style/questionLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fun_label" />
 
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="14dp"
-            android:onClick="submit"
-            android:text="@string/submit"
-            android:textSize="18sp" />
-    </LinearLayout>
+            <RatingBar
+                android:id="@+id/fun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/alcohol_label"
+                style="@style/questionLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alcohol_label" />
+
+            <TextView
+                android:id="@+id/alcohol_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <SeekBar
+                android:id="@+id/alcohol"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:max="30" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:onClick="submit"
+                android:text="@string/submit"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
 
 </ScrollView>

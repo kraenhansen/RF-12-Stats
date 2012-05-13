@@ -48,7 +48,7 @@ public class Area {
 		if(label != null && label instanceof String) {
 			this.label = (String) label;
 		} else {
-			Log.e(RFYesterdayQuestionaryActivity.LOG_TAG, "Map format corrupted, missing a String label.");
+			Log.e(QuestionaryActivity.LOG_TAG, "Map format corrupted, missing a String label.");
 		}
 		
 		Object labelPosition = area.get("labelPosition");
@@ -58,7 +58,7 @@ public class Area {
 				throw new RuntimeException("Error reading a labelPosition coord.");
 			}
 		} else {
-			Log.e(RFYesterdayQuestionaryActivity.LOG_TAG, "Map format corrupted, missing a labelPosition.");
+			Log.e(QuestionaryActivity.LOG_TAG, "Map format corrupted, missing a labelPosition.");
 		}
 		
 		Object polygon = area.get("polygon");
@@ -79,7 +79,7 @@ public class Area {
 			//Log.d(RFYesterdayQuestionaryActivity.LOG_TAG, "Read a polygon on size = "+polygonPoints.size());
 			this.polygon = polygonPoints;
 		} else {
-			Log.e(RFYesterdayQuestionaryActivity.LOG_TAG, "Map format corrupted, missing a polygon.");
+			Log.e(QuestionaryActivity.LOG_TAG, "Map format corrupted, missing a polygon.");
 		}
 	}
 	

@@ -22,7 +22,7 @@ public class QuestionaryResponse extends java.util.HashMap<String, Object> {
 		for(int id: fieldIds) {
 			String key = parentView.getResources().getResourceEntryName(id);
 			Object value = getValue(parentView.findViewById(id));
-			Log.d(RFYesterdayQuestionaryActivity.LOG_TAG, "Adding "+key+" = "+value);
+			Log.d(QuestionaryActivity.LOG_TAG, "Adding "+key+" = "+value);
 			put(key, value);
 		}
 	}

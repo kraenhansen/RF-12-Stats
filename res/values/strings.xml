@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Roskilde Festival Yesterday</string>
+    <string name="app_name">Yesterday at Roskilde Festival</string>
     <string name="area_label">Where were you?</string>
     <string name="fun_label">How much fun did you have?</string>
     <string name="alcohol_label">How many units of alcohol did you drink?</string>

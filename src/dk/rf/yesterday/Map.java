@@ -81,7 +81,7 @@ public class Map extends View {
 	
 	public void drawAreas(Canvas canvas) {
 		for(Area a: areas) {
-			Log.d(RFYesterdayQuestionaryActivity.LOG_TAG, "Drawing "+a);
+			Log.d(QuestionaryActivity.LOG_TAG, "Drawing "+a);
 			a.draw(canvas);
 		}
 	}
